@@ -2,16 +2,19 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <weatherWidghet></weatherWidghet>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import weatherWidghet from './components/weatherWidghet.vue'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    weatherWidghet,
+    props:{
+      text:{type:string}
+    }
   }
 }
 </script>
